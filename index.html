@@ -2,9 +2,46 @@
 <html>
   <head>
     <title>SkillLink</title>
+
+    <!-- IMPORTANT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <h1>Welcome to SkillLink</h1>
+    <!-- NAVBAR -->
+    <nav>
+      <h2>SkillLink</h2>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="request.html">Request</a>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <h1>Find Skilled Workers Near You</h1>
+
+      <input type="text" placeholder="Search for service..." />
+
+      <h2>Categories</h2>
+      <button>🔧 Plumbing</button>
+      <button>💡 Electrical</button>
+      <button>🧹 Cleaning</button>
+      <button>✂️ Tailoring</button>
+
+      <h2>Popular Workers</h2>
+
+      <div class="card">
+        <h3>Ibrahim</h3>
+        <p>⚡ Electrician</p>
+        <p>📍 Lumley</p>
+        <button onclick="contact()">📞 Call</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
